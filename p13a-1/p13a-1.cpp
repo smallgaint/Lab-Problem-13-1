@@ -57,7 +57,7 @@ bool readFromFile(string filename) {
 
 	for (int i = 0; i < 26; i++) {
 		char letter = 'A' + i;
-		cout << "'" << letter << "': " << fixed << setprecision(3) << letterCount[i]/totalLetters << endl;
+		cout << "'" << letter << "': " << fixed << setprecision(3) << right << setw(6) << letterCount[i] / totalLetters * 100 << endl;
 	}
 
 	inFile.close();
